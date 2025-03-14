@@ -12,14 +12,14 @@ Bu loyiha Node.js, Express.js, PostgreSQL va Swagger asosida yaratilgan kurs bos
 1️⃣ Loyihani klonlash
 
 # GitHub-dan loyihani yuklab olish
-git clone https://github.com/username/course-management.git
+git clone https://github.com/navroz7711/course-management.git
 cd course-management
 
 2️⃣ Muhit sozlash
 
 Loyihada .env faylini yaratib, quyidagi ma’lumotlarni to‘ldiring:
 
-PORT=3000
+PORT=3001
 DATABASE_URL=postgres://user:password@localhost:5432/course_db
 
 Muhim! DATABASE_URL ni o‘zingizning PostgreSQL ma’lumotlar bazasi bilan moslang.
@@ -45,12 +45,6 @@ CREATE TABLE enrollments (
     completed BOOLEAN DEFAULT false,
     FOREIGN KEY (courseId) REFERENCES courses(id)
 );
-
-5️⃣ Serverni ishga tushirish
-
-npm run dev
-
-Server quyidagi manzilda ishlaydi:👉 http://localhost:3000
 
 🔥 API Yo‘nalishlari
 
